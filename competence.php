@@ -14,6 +14,24 @@
 <body>
 <?php include_once "phpinclude/navMenu.php" ?>
 <div id="content">
+    <?php
+    $server = "localhost";
+    $login = "root";
+    $pwd = "";
+    try {
+        $conn = new PDO("mysql:host=$server;dbname=siteperso", $login, $pwd);
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "Connected successfully";
+    }
+    catch(PDOException $e){
+        echo("not connected") . $e->getMessage();
+    }
+    $request = $conn->prepare("SELECT * FROM skillbar");
+    $request->execute();
+    $result = $request->fetchAll();
+    print_r($result);
+    ?>
 
     <div class="div-left">
         <h2>Techno Web</h2>
