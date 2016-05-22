@@ -119,11 +119,14 @@ footer{
     display: inline-block;
     float: left;
     width: 48%;
+    height: auto;
+    margin-bottom: 60px;
 }
 .div-right{
     display: inline-block;
     float: right;
     width: 48%;
+    margin-bottom: 60px;
 }
 .divfull{
     display: inline-block;
@@ -293,4 +296,9 @@ input:focus, textarea:focus {
         padding-left: 3%;
         padding-right: 3%;
     }
+}
+
+.adminSkill {
+    display: block;
+    border: solid 1px;
 }

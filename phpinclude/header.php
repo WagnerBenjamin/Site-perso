@@ -6,4 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
     <meta charset="utf-8"/>
     <title>WAGNER Benjamin</title>
+    <?php
+    session_start(); $_SESSION["user"] = null;
+    if(isset($_GET["admin"])){
+        $_SESSION["user"] = $_GET["admin"];
+    }
+    ?>
 </head>
