@@ -7,7 +7,8 @@
     <meta charset="utf-8"/>
     <title>WAGNER Benjamin</title>
     <?php
-    session_start(); $_SESSION["user"] = null;
+    session_start();
+    if(!isset($_SESSION["user"])){ $_SESSION["user"] = null; }
     if(isset($_GET["admin"])){
         $_SESSION["user"] = $_GET["admin"];
     }
