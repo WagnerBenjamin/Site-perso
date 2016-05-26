@@ -8,8 +8,7 @@ include_once "phpinclude/dbCon.php";
 if(isset($_GET["text"])) {
     $insertQuery = $conn->prepare("INSERT INTO contact(name, email, content) VALUES ('" . $_GET['name'] . "', '" . $_GET['email'] . "', '" . $_GET['text'] . "')");
     $insertQuery->execute();
-}
-?>
+} ?>
 <div id="content">
     <div id="form-main">
         <div id="form-div">

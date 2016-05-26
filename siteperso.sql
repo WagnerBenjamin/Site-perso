@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 22 Mai 2016 à 17:16
+-- Généré le :  Jeu 26 Mai 2016 à 11:38
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -19,6 +19,51 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `siteperso`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `changelog`
+--
+
+CREATE TABLE IF NOT EXISTS `changelog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Contenu de la table `changelog`
+--
+
+INSERT INTO `changelog` (`id`, `date`, `titre`, `description`) VALUES
+(1, '2016-05-26', 'Test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(2, '2015-02-17', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(3, '2016-02-26', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(4, '2016-05-10', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(5, '2016-09-04', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(6, '2016-05-26', 'Test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(7, '2015-02-17', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(8, '2016-02-26', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(9, '2016-05-10', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(10, '2016-09-04', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla eget purus non dignissim. Duis id velit ac nisi vehicula vehicula. Nulla convallis at massa consequat posuere. Etiam ullamcorper commodo quam, sed feugiat metus posuere quis. Aliq'),
+(13, '2016-05-26', 'fhiuhfoi\r\n', 'fgorpgjpesogjpoerj gehjgio ehgj gh ooshg ou hgo hpjgo pjg jop');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `email` text NOT NULL,
+  `content` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

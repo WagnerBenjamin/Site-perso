@@ -23,6 +23,7 @@
 
 .skillbar-title {
     position:absolute;
+    font-family: 'Open Sans', sans-serif;
     top:0;
     left:0;
     width:100%;
@@ -61,6 +62,7 @@
 
 .skill-bar-percent {
     position:absolute;
+    font-family: 'Open Sans', sans-serif;
     right:10px;
     top:0;
     font-size:11px;

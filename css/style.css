@@ -302,3 +302,27 @@ input:focus, textarea:focus {
     display: block;
     margin-bottom: 15px;
 }
+
+#changelog{
+    display: block;
+    border: 20px solid #7e7e7e;
+    height: 40vw;
+    border-radius: 10px;
+    background-color: white;
+    overflow: auto;
+    padding: 20px;
+}
+
+.changeTitle{
+    display: inline-block;
+}
+
+.changeDate{
+    color: #5e5e5e;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.changeDesc {
+    font-family: 'Open Sans', sans-serif;
+}

@@ -47,7 +47,7 @@ include_once "phpinclude/dbCon.php";
 
     foreach($skillLeft as $v){
         if($prev != $v["category"]){
-            echo"<h2>".$categoryName[$v["category"]]."</h2>";
+            echo"<h2 class='skillCate'>".$categoryName[$v["category"]]."</h2>";
         }
         ?>
         <div class="skillbar clearfix " data-percent="<?php echo $v["value"] ?>%">
@@ -65,7 +65,7 @@ include_once "phpinclude/dbCon.php";
 
     foreach($skillRight as $v){
         if($prev != $v["category"]){
-            echo"<h2>".$categoryName[$v["category"]]."</h2>";
+            echo"<h2 class='skillCate'>".$categoryName[$v["category"]]."</h2>";
         }
         ?>
         <div class="skillbar clearfix " data-percent="<?php echo $v["value"] ?>%">
